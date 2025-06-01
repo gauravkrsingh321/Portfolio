@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { SiLeetcode } from "react-icons/si";
 import profilePic from "../assets/profile-pic.jpg"
 
 const MainSection = () => {
@@ -44,13 +45,13 @@ const MainSection = () => {
         <p className='text-sm pt-4 lg:w-[80%] lg:pt-6 lg:leading-7 lg:text-[1.1rem] leading-[1.35rem] font-[500]'>You are currently reading a paragraph written by a Pre-Final Year Student at BIT Mesra who is a Tech Enthusiast with a pinch of ambivertness, a teaspoon of childishness and a handful of adventurness in his life!! </p>
 
       <div className="flex gap-4 md:pt-2 lg:pt-5 relative w-full mt-4 text-[#00EBFD] text-2xl">
-      <a className='md:text-3xl' href="https://www.linkedin.com/in/gaurav-kumar-singh-a57596348/" target="_blank" rel="noopener noreferrer">
+      <a className='md:text-3xl hover:text-white' href="https://www.linkedin.com/in/gaurav-kumar-singh-a57596348/" target="_blank" rel="noopener noreferrer">
         <FaLinkedin />
       </a>
-      <a className='md:text-3xl' href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-        <FaTwitter />
+      <a className='md:text-3xl hover:text-white' href="https://leetcode.com/u/GauravKrSingh40/" target="_blank" rel="noopener noreferrer">
+        <SiLeetcode />
       </a>
-      <a className='md:text-3xl' href="https://github.com/gauravkrsingh321" target="_blank" rel="noopener noreferrer">
+      <a className='md:text-3xl hover:text-white' href="https://github.com/gauravkrsingh321" target="_blank" rel="noopener noreferrer">
         <FaGithub />
       </a>
       <a href='./Resume.pdf' download className="text-[#323946] font-extrabold md:top-16 absolute top-10 lg:top-20 left-[-4px] bg-[#00EBFD] hover:bg-blue-800 focus:outline-none hover:text-white focus:ring-4 rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2  ">Download Resume</a>
