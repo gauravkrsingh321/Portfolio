@@ -14,7 +14,7 @@ const Projects = () => {
         Web <span className="text-[#00EBFD]">Development Projects</span>
       </h3>
       <div className="project-container lg:px-36 00 min-h-[70vh] pt-4 lg:pt-0">
-        <div className="px-2 lg:py-6 lg:px-4 py-4 flex relative min-h-[70vh] flex-col lg:flex-row lg:gap-x-10 gap-y-10 overflow-hidden">
+        <div className="px-2 lg:py-6 lg:px-4 py-4 flex relative min-h-[70vh] flex-col lg:flex-row xl:flex-row lg:gap-x-10 gap-y-10 overflow-hidden">
           <a
             href="https://ecozmy-shopping.vercel.app/"
             target="_blank"

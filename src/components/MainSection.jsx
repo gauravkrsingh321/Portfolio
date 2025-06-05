@@ -39,10 +39,10 @@ const MainSection = () => {
     <div id='intro' className='bg-[#1F242D] md:px-20 lg:px-40 pb-12 px-4 min-h-[80vh] text-white w-full'>
       <div className='w-full flex flex-col gap-y-25 md:flex-row md:max-w-screen'>
         <div className='lg:w-[70%]'>
-          <h3 className='text-2xl md:text-3xl pt-4 md:pt-8 lg:pt-30 font-[700]'>Hello, It's Me</h3>
+          <h3 className='text-2xl md:text-3xl pt-4 md:pt-8 lg:pt-30 font-[700]'>Hello, This is</h3>
         <h1 className='text-4xl animate-pulse lg:text-5xl pt-1 lg:pt-3 font-[700]'>Gaurav Kumar Singh</h1>
         <h3 className='text-2xl lg:text-3xl pt-1 lg:pt-4 font-[700]'>And I'm a <span className='text-[#00EBFD] font-[700]'>{text}</span></h3>
-        <p className='text-sm pt-4 lg:w-[80%] lg:pt-6 lg:leading-7 lg:text-[1.1rem] leading-[1.35rem] font-[500]'>You are currently reading a paragraph written by a Pre-Final Year Student at BIT Mesra who is a Tech Enthusiast with a pinch of ambivertness, a teaspoon of childishness and a handful of adventurness in his life!! </p>
+        <p className='text-sm pt-4 lg:w-[80%] lg:pt-6 lg:leading-7 lg:text-[1.1rem] leading-[1.35rem] font-[500]'>Pre-final year B.Tech student at BIT Mesra with a passion for tech, creativity, and building cool things that solve real problems.</p>
 
       <div className="flex gap-4 md:pt-2 lg:pt-5 relative w-full mt-4 text-[#00EBFD] text-2xl">
       <a className='md:text-3xl hover:text-white' href="https://www.linkedin.com/in/gaurav-kumar-singh-a57596348/" target="_blank" rel="noopener noreferrer">
@@ -68,7 +68,7 @@ const MainSection = () => {
         <div id='about' className='py-12 mt-8 md:mt-18 lg:mt-12'>
            <h3 className='text-3xl font-bold pb-1 lg:text-[2.5rem]'>About <span className='text-[#00EBFD] text-3xl font-bold lg:text-[2.5rem]'>Me</span></h3>
            <p className='text-2xl font-bold lg:text-[1.6rem]'>Tech Enthusiast</p>
-           <p className='text-sm  lg:text-[1.1rem] opacity-[0.9] pt-6 mb-6 lg:mb-8'>When faced with the choice between CSE at BIT Mesra and non-circuital branches at IIT, I thought, "Why swim in the ocean of possibilities when I can surf the waves of coding greatness at BIT?" This is the level of Tech Madness I have inside me. Coding is my jam, and who knows, maybe I'll code Google's way to Mars someday! Bring on the nerdy algorithms and let's conquer the tech world, one line of code at a time!🚀</p>
+           <p className='text-sm  lg:text-[1.1rem] opacity-[0.9] pt-6 mb-6 lg:mb-8'>I'm a Pre-final year Btech Chemical Engineering student at BIT Mesra with a strong passion for technology. I actively explore Data Structures & Algorithms and Web Development, and love building efficient, user-friendly web applications user-focused applications and solving coding challenges that sharpen my logical thinking. Whether it’s learning new frameworks, contributing to projects, or exploring the intersection of tech and real-world problems, I’m always up for a challenge and hungry to grow as a developer.</p>
            <a href='#intro' className="text-[#323946] lg:px-7  lg:tracking-[0.08rem] md:top-16 bg-[#00EBFD] hover:bg-blue-800 focus:outline-none focus:ring-4 font-extrabold rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 ">Read More</a>
         </div>
   </div>

@@ -8,7 +8,7 @@ const Header = () => {
     <>
       {/* Header */}
       <div className='bg-[#1C2028]  md:h-[12vh] h-[10vh] flex md:justify-between items-center px-4 md:px-20 lg:px-40 justify-between z-10 relative'>
-        <a href='#' className='text-white hover:text-[#00EBFD] text-[1.2rem] md:text-2xl font-medium'>Gaurav's</a>
+        <a href='#' className='text-white hover:text-[#00EBFD] text-[1.2rem] md:text-2xl font-medium'>My Portfolio</a>
 
         {/* Desktop Nav */}
         <div className='text-white scroll-auto lg:text-[1.35rem] text-[1.1rem] hidden md:flex gap-x-12'>
