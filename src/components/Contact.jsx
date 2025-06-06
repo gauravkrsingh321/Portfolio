@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+
 
 const Contact = () => {
   const [formData, setformData] = useState({
@@ -6,6 +9,7 @@ const Contact = () => {
     lastName: "",
     emailAddress: "",
     phone: "",
+    message:""
   });
 
   const [errors, setErrors] = useState({})
@@ -37,11 +41,11 @@ const Contact = () => {
   const submitHandler = (e) => {
     e.preventDefault();
    
-    
+  let pattern = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
   const newErrors = {};
   if (!formData.firstName) newErrors.firstName = "Please enter full name";
   if (!formData.lastName) newErrors.lastName = "Please enter last name";
-  if (!formData.emailAddress) newErrors.emailAddress = "Please enter email";
+  if (!formData.emailAddress || !pattern.test(formData.emailAddress)) newErrors.emailAddress = "Please enter valid email";
   if (!formData.phone) newErrors.phone = "Please enter Phone number";
   // if (!formData.message.trim()) newErrors.message = "Please enter a message";
 
@@ -50,6 +54,28 @@ const Contact = () => {
     console.log(newErrors)
     return; // stop form submission
   }
+
+    //Send email using EmailJS
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,   //Replace with your EmailJS service ID
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  //Replace with your EmailJS template ID
+      {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        emailAddress: formData.emailAddress,
+        phone: formData.phone,
+        message: formData.message,
+      },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY      // Replace with your EmailJS public key
+    ).then((res) => {
+      toast.success("Email sent successfully!",{
+         position:"top-center",
+         autoClose: 1000,
+      });
+    }).catch((err) => {
+      toast.error("Failed to send email.");
+      console.error(err);
+    });
 
     console.log("Formdata => ", formData);
     
