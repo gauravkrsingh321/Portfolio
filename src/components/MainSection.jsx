@@ -54,7 +54,7 @@ const MainSection = () => {
       <a className='md:text-3xl hover:text-white' href="https://github.com/gauravkrsingh321" target="_blank" rel="noopener noreferrer">
         <FaGithub />
       </a>
-      <a href='../public/Gaurav_Resume.pdf' download className="text-[#323946] font-extrabold md:top-16 absolute top-10 lg:top-20 left-[-4px] bg-[#00EBFD] hover:bg-blue-800 focus:outline-none hover:text-white focus:ring-4 rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2  ">Download Resume</a>
+      <a href='/Gaurav_Resume.pdf' download className="text-[#323946] font-extrabold md:top-16 absolute top-10 lg:top-20 left-[-4px] bg-[#00EBFD] hover:bg-blue-800 focus:outline-none hover:text-white focus:ring-4 rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2  ">Download Resume</a>
       </div>
         </div>
 
